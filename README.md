@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import replaceAfter from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-replace-after@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string-base-replace-after/tags). For example,
+
+```javascript
 import replaceAfter from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-replace-after@v0.1.0-esm/index.mjs';
 ```
 
@@ -113,7 +118,7 @@ var out = replaceAfter( 'beep boop beep', ' ', 'loop', -6 );
 <body>
 <script type="module">
 
-import replaceAfter from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-replace-after@v0.1.0-esm/index.mjs';
+import replaceAfter from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-replace-after@esm/index.mjs';
 
 var out = replaceAfter( 'beep boop', 'p', 'see', 0 );
 // returns 'beepsee'
