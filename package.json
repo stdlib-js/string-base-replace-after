@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/string-base-replace-after",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Replace the substring after the first occurrence of a specified search string.",
   "license": "Apache-2.0",
   "author": {
