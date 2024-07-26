@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import replaceAfter from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-replace-after@deno/mod.js';
+import replaceAfter from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-replace-after@v0.1.1-deno/mod.js';
 ```
 
 #### replaceAfter( str, search, replacement, fromIndex )
@@ -108,7 +108,7 @@ var out = replaceAfter( 'beep boop beep', ' ', 'loop', -6 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import replaceAfter from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-replace-after@deno/mod.js';
+import replaceAfter from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-replace-after@v0.1.1-deno/mod.js';
 
 var out = replaceAfter( 'beep boop', 'p', 'see', 0 );
 // returns 'beepsee'
