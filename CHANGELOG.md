@@ -32,12 +32,11 @@ No changes reported for this release.
 ### BREAKING CHANGES
 
 -   [`b665537`](https://github.com/stdlib-js/stdlib/commit/b6655370f23b4bfdccc19c55af18699c2f368020): resolve negative indices relative to the last string character
--   [`b665537`](https://github.com/stdlib-js/stdlib/commit/b6655370f23b4bfdccc19c55af18699c2f368020): resolve negative indices relative to the last string character 
 
     -   Previously, a negative index would resolve to `0`. This commit changes
-    that behavior to resolve relative to the last index. To preserve
-    previous behavior, users should clamp `fromIndex` values to string
-    bounds before calling into `replaceAfter`.
+        that behavior to resolve relative to the last index. To preserve
+        previous behavior, users should clamp `fromIndex` values to string
+        bounds before calling into `replaceAfter`.
 
 </section>
 
