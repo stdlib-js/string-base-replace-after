@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string-base-replace-after
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-replaceAfter = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-replace-after@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var replaceAfter = require( 'path/to/vendor/umd/string-base-replace-after/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-base-replace-after@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.replaceAfter;
-})();
-</script>
+var replaceAfter = require( '@stdlib/string-base-replace-after' );
 ```
 
 #### replaceAfter( str, search, replacement, fromIndex )
@@ -131,13 +125,8 @@ var out = replaceAfter( 'beep boop beep', ' ', 'loop', -6 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-base-replace-after@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var replaceAfter = require( '@stdlib/string-base-replace-after' );
 
 var out = replaceAfter( 'beep boop', 'p', 'see', 0 );
 // returns 'beepsee'
@@ -153,11 +142,6 @@ out = replaceAfter( '', 'xyz', 'foo', 0 );
 
 out = replaceAfter( 'beep boop beep baz', 'beep', 'foo', 5 );
 // return 'beep boop beepfoo'
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -175,6 +159,14 @@ out = replaceAfter( 'beep boop beep baz', 'beep', 'foo', 5 );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/string-base/replace-after-last`][@stdlib/string/base/replace-after-last]</span><span class="delimiter">: </span><span class="description">replace the substring after the last occurrence of a specified search string.</span>
+-   <span class="package-name">[`@stdlib/string-base/replace-before`][@stdlib/string/base/replace-before]</span><span class="delimiter">: </span><span class="description">replace the substring before the first occurrence of a specified search string.</span>
+-   <span class="package-name">[`@stdlib/string-base/replace-before-last`][@stdlib/string/base/replace-before-last]</span><span class="delimiter">: </span><span class="description">replace the substring before the last occurrence of a specified search string.</span>
 
 </section>
 
@@ -251,6 +243,16 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/string-base-replace-after/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/string-base-replace-after/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/string/base/replace-after-last]: https://github.com/stdlib-js/string-base-replace-after-last
+
+[@stdlib/string/base/replace-before]: https://github.com/stdlib-js/string-base-replace-before
+
+[@stdlib/string/base/replace-before-last]: https://github.com/stdlib-js/string-base-replace-before-last
+
+<!-- </related-links> -->
 
 </section>
 
